@@ -28,21 +28,29 @@ This document contains a Mermaid diagram representing the Factory AI Implementat
 
 ---
 
-## Mermaid Diagram
+## Circular Mermaid Diagram
 
 ```mermaid
-graph TD
-    A["🎯<br/><b>Identify Domain of Focus</b><br/>Choose the scope of focus based on ROI<br/>or other business priorities"] --> B["📚<br/><b>Human Knowledge</b><br/>Leverage the expertise of domain specialists<br/>to identify suitable AI applications"]
-    B --> C["🏭<br/><b>Human Context</b><br/>Design with an understanding of how<br/>factory environments and work processes operate"]
-    C --> D["🔗<br/><b>Human Interaction</b><br/>Develop interfaces and workflows that<br/>complement worker skills and experience"]
-    D --> E["👁️<br/><b>Human Governance</b><br/>Empower users to understand, monitor,<br/>and control AI systems responsibly"]
+graph TB
+    subgraph " "
+        A["🎯<br/><b>Identify Domain<br/>of Focus</b><br/><small>Choose scope based on<br/>ROI and business priorities</small>"]
+        B["📚<br/><b>Human<br/>Knowledge</b><br/><small>Leverage domain specialist<br/>expertise for AI applications</small>"]
+        C["🏭<br/><b>Human<br/>Context</b><br/><small>Design with understanding<br/>of factory environments</small>"]
+        D["🔗<br/><b>Human<br/>Interaction</b><br/><small>Develop interfaces that<br/>complement worker skills</small>"]
+        E["👁️<br/><b>Human<br/>Governance</b><br/><small>Empower users to monitor<br/>and control AI systems</small>"]
+    end
+    
+    A --> B
+    B --> C
+    C --> D
+    D --> E
     E --> A
     
-    classDef step1 fill:#2F3061,stroke:#2F3061,stroke-width:2px,color:#fff
-    classDef step2 fill:#32533D,stroke:#32533D,stroke-width:2px,color:#fff
-    classDef step3 fill:#2F3061,stroke:#2F3061,stroke-width:2px,color:#fff
-    classDef step4 fill:#32533D,stroke:#32533D,stroke-width:2px,color:#fff
-    classDef step5 fill:#2F3061,stroke:#2F3061,stroke-width:2px,color:#fff
+    classDef step1 fill:#2F3061,stroke:#2F3061,stroke-width:1px,color:#fff,font-size:12px
+    classDef step2 fill:#32533D,stroke:#32533D,stroke-width:1px,color:#fff,font-size:12px
+    classDef step3 fill:#2F3061,stroke:#2F3061,stroke-width:1px,color:#fff,font-size:12px
+    classDef step4 fill:#32533D,stroke:#32533D,stroke-width:1px,color:#fff,font-size:12px
+    classDef step5 fill:#2F3061,stroke:#2F3061,stroke-width:1px,color:#fff,font-size:12px
     
     class A step1
     class B step2
@@ -53,19 +61,46 @@ graph TD
 
 ---
 
-## Alternative Circular Layout (Recommended for LinkedIn)
-
-For a more circular, LinkedIn-optimized layout, use this version:
+## True Circular Layout (Pentagon Shape)
 
 ```mermaid
-graph LR
-    subgraph "Factory AI Implementation Approach"
-        A["🎯<br/><b>Identify Domain<br/>of Focus</b><br/><small>Choose scope based on<br/>ROI and business priorities</small>"]
-        B["📚<br/><b>Human<br/>Knowledge</b><br/><small>Leverage domain specialist<br/>expertise for AI applications</small>"]
-        C["🏭<br/><b>Human<br/>Context</b><br/><small>Design with understanding<br/>of factory environments</small>"]
-        D["🔗<br/><b>Human<br/>Interaction</b><br/><small>Develop interfaces that<br/>complement worker skills</small>"]
-        E["👁️<br/><b>Human<br/>Governance</b><br/><small>Empower users to monitor<br/>and control AI systems</small>"]
-    end
+graph TB
+    A["🎯<br/><b>Identify Domain<br/>of Focus</b><br/><small>Choose scope based on<br/>ROI and business priorities</small>"]
+    B["📚<br/><b>Human<br/>Knowledge</b><br/><small>Leverage domain specialist<br/>expertise for AI applications</small>"]
+    C["🏭<br/><b>Human<br/>Context</b><br/><small>Design with understanding<br/>of factory environments</small>"]
+    D["🔗<br/><b>Human<br/>Interaction</b><br/><small>Develop interfaces that<br/>complement worker skills</small>"]
+    E["👁️<br/><b>Human<br/>Governance</b><br/><small>Empower users to monitor<br/>and control AI systems</small>"]
+    
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> A
+    
+    classDef step1 fill:#2F3061,stroke:#2F3061,stroke-width:1px,color:#fff,font-size:12px
+    classDef step2 fill:#32533D,stroke:#32533D,stroke-width:1px,color:#fff,font-size:12px
+    classDef step3 fill:#2F3061,stroke:#2F3061,stroke-width:1px,color:#fff,font-size:12px
+    classDef step4 fill:#32533D,stroke:#32533D,stroke-width:1px,color:#fff,font-size:12px
+    classDef step5 fill:#2F3061,stroke:#2F3061,stroke-width:1px,color:#fff,font-size:12px
+    
+    class A step1
+    class B step2
+    class C step3
+    class D step4
+    class E step5
+```
+
+---
+
+## Alternative Circular Flow Diagram
+
+```mermaid
+flowchart TD
+    A["🎯<br/><b>Identify Domain<br/>of Focus</b><br/><small>Choose scope based on<br/>ROI and business priorities</small>"]
+    B["📚<br/><b>Human<br/>Knowledge</b><br/><small>Leverage domain specialist<br/>expertise for AI applications</small>"]
+    C["🏭<br/><b>Human<br/>Context</b><br/><small>Design with understanding<br/>of factory environments</small>"]
+    D["🔗<br/><b>Human<br/>Interaction</b><br/><small>Develop interfaces that<br/>complement worker skills</small>"]
+    E["👁️<br/><b>Human<br/>Governance</b><br/><small>Empower users to monitor<br/>and control AI systems</small>"]
     
     A --> B
     B --> C
